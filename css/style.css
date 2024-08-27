@@ -1379,3 +1379,21 @@ ul.img_icon li {
      }
  
 
+
+/* 
+     efecto parallax */
+
+     .parallax {
+          background-image: url('../images/pexels-divinetechygirl-1181244.jpg');
+          height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      .content {
+          height: 400px;
+          background-color: #ffffff;
+          text-align: center;
+          padding: 50px;
