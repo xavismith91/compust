@@ -422,7 +422,7 @@ ul.conta_icon li a:hover {
 }
 
 
-/*-- navigation--*/
+
 
 .navigation.navbar {
      float: left;
@@ -489,7 +489,7 @@ ul.sign li a i {
 }
 
 
-/** banner section **/
+
 
 .banner_main {
      padding: 60px 0 0px 0;
@@ -558,7 +558,6 @@ ul.sign li a i {
 }
 
 
-/** end banner section **/
 
 .titlepage {
      text-align: left;
@@ -620,7 +619,6 @@ ul.sign li a i {
 }
 
 
-/** about section **/
 
 .about {
      padding-top: 90px;
@@ -711,10 +709,7 @@ ul.sign li a i {
 }
 
 
-/** end about section **/
 
-
-/** service section **/
 
 .service {
      background-color: #fff;
@@ -1380,8 +1375,7 @@ ul.img_icon li {
  
 
 
-/* 
-     efecto parallax */
+/*efecto parallax */
 
      .parallax {
           background-image: url('../images/pexels-divinetechygirl-1181244.jpg');
@@ -1397,3 +1391,4 @@ ul.img_icon li {
           background-color: #ffffff;
           text-align: center;
           padding: 50px;
+      }
