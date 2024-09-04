@@ -576,7 +576,7 @@ ul.sign li a i {
 
 .yellow {
      color: #f2db18;
-     font-size: 17px;
+     font-size: 24px;
      font-weight: bold;
      text-transform: uppercase;
      line-height: 28px;
@@ -827,9 +827,11 @@ ul.sign li a i {
      -ms-transform: translate(-50%, -50%);
      text-align: center;
      background-color: #ebd93cc2;
-     width: 90%;
-     height: 92%;
+     width: 92%;
+     height: 91%;
 }
+
+
 
 .text2 {
      background-color: transparent;
@@ -1385,10 +1387,30 @@ ul.img_icon li {
           background-repeat: no-repeat;
           background-size: cover;
       }
-      
+
       .content {
           height: 400px;
           background-color: #ffffff;
           text-align: center;
           padding: 50px;
       }
+
+      .parallax2 {
+          background-image: url('../images/secrity.jpg');
+          height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+                         
+      .content {
+          height: 400px;
+          background-color: #ffffff;
+          text-align: center;
+          padding: 50px;
+      }
+
+
+
+      
