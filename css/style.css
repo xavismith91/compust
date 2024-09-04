@@ -154,6 +154,8 @@ img {
      outline: 0;
 }
 
+/*Submenú*/
+
 .btn-custom {
      margin-top: 20px;
      background-color: transparent !important;
@@ -1413,4 +1415,15 @@ ul.img_icon li {
 
 
 
-      
+      /* Muestra el menú al pasar el puntero sobre el elemento */
+.nav-item.dropdown:hover .dropdown-menu {
+     display: block;
+     margin-top: 0; /* Ajusta el margen si es necesario */
+ }
+ 
+ /* Para asegurar que no haya retrasos en el hover */
+ .nav-item.dropdown:hover .dropdown-toggle {
+     color: #fff; /* Cambia el color si lo deseas */
+     background-color: #343a40; /* Color de fondo del toggle */
+ }
+ 
