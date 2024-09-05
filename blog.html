@@ -41,62 +41,49 @@
    <header>
 
       <div class="header">
-         <div class="header_to d_none">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                     <ul class="lan conta_icon">
-                        <li><a href="tel://+522491283853"><i class="fa fa-phone" aria-hidden="true"></i>Contáctanos : (+52) 249 128 3853</a> </li>
-                        <li><a href="mailto:hola.computecst@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>hola.computecst@gmail.com</a> </li>
-                     </ul>
-                  </div>
-                  <div class="col-md-6 col-sm-6 ">
-                     <ul class="social_icon1">
-                        <li> Síguenos
-                        </li>
-                        <li> <a href="https://www.facebook.com/profile.php?id=100090001100835" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                        <li> <a href="https://www.instagram.com/computec_st/?igsh=MWF5N2d2cnNtMHJmeg%3D%3D" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-
-         <div class="header_bo">
+        <div class="header_bo">
             <div class="container">
                <div class="row">
                   <div class="col-md-9 col-sm-7">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                            <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarsExample04">
                            <ul class="navbar-nav mr-auto">
                               <li class="nav-item">
-                                 <a class="nav-link" href="index.html"> Inicio </a>
+                                 <a class="nav-link" href="index.html">Inicio</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="nosotros.html">Nosotros</a>
                               </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="servicios.html">Servicios</a>
+                              <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="servicios.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Servicios
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <a class="dropdown-item" href="#service1">Soporte Técnico</a>
+                                    <a class="dropdown-item" href="#service2">Desarrollo de Software</a>
+                                    <a class="dropdown-item" href="#service3">Crusos</a>
+                                    <a class="dropdown-item" href="#service4">Redes</a>
+                                    <a class="dropdown-item" href="#service5">Crusos</a>
+                                    <a class="dropdown-item" href="#service3">Análisis de Vulnerabilidades</a>
+                                    <a class="dropdown-item" href="#service3">Testing de Software</a>
+                                    <a class="dropdown-item" href="#service3">Instalación de Cámaras de Seguridad</a> 
+                                 </div>
                               </li>
-                              <!-- <li class="nav-item">
-                                 <a class="nav-link" href="ventas.html">Ventas</a>
-                              </li> -->
-                              <li class="nav-item">
-                                 <a class="nav-link" href="cursos.html">Cursos</a>
+                              <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle" href="servicios.html" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Cursos
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <a class="dropdown-item" href="computo1.html">Iniciación a Cómputo I</a>
+                                    <a class="dropdown-item" href="computo2.html">Iniciación a Cómputo II</a>
+                                    <a class="dropdown-item" href="redes.html">Redes</a>                                    
+                                 </div>
                               </li>
-                               <!-- <li class="nav-item">
-                                 <a class="nav-link" href="contacto.html"> Desarollo </a>
-                              </li>  -->
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="blog.html">Blog</a>
+                              <li class="nav-item">
+                                 <a class="nav-link active" href="blog.html">Blog</a>
                               </li>
                            </ul>
                         </div>
@@ -110,7 +97,6 @@
                </div>
             </div>
          </div>
-      </div>
    </header>
    <br><br><br><br><br>
 
@@ -137,11 +123,13 @@
                                       </div>
   
                                       <div class="blog-meta big-meta col-md-8">
-                                          <h7><a href="https://www.cybermaxx.com/resources/cve-2024-38063/" target="_blank" title="">Vulnerabilidad en Protocolo TCP/IP</a></h7>
+                                          <h7>Vulnerabilidad en Protocolo TCP/IP</h7>
                                           <br><br>
-                                          <p>Esta vulnerabilidad de código remoto permite a un atacante no autenticado enviar repetidamente paquetes IPv6, que incluyen paquetes especialmente diseñados, a una máquina Windows, lo que podría permitir la ejecución remota de código. Microsoft ha publicado parches de seguridad urgentes y recomienda instalarlos lo antes posible.</p>
+                                          <p class="texto-justificado">Esta vulnerabilidad de código remoto permite a un atacante no autenticado enviar repetidamente paquetes IPv6, que incluyen paquetes especialmente diseñados, a una máquina Windows, lo que podría permitir la ejecución remota de código. Microsoft ha publicado parches de seguridad urgentes y recomienda instalarlos lo antes posible.</p>                                          
                                           <br>
-                                          <small><a href="tech-single.html" title="">14 Agosto, 2024</a></small>
+                                          <a href="https://www.cybermaxx.com/resources/cve-2024-38063/" target="_blank">Ver Artículo Aquí</a>
+                                          <br> 
+                                          <small><a href="tech-single.html" title="">14 Agosto, 2024</a></small>                            
                                           <br>
                                           <small><a href="tech-author.html" title="">Por Connor Jackson</a></small>
                                       </div>
@@ -159,10 +147,13 @@
                                       </div>
   
                                       <div class="blog-meta big-meta col-md-8">
-                                          <h7><a href="https://www.qualys.com/research/security-alerts/2024-08-13/microsoft/" target="_blank" title="">Alerta de Seguridad de Microsoft</a></h7>
+                                          <h7>Alerta de Seguridad de Microsoft.</h7>
                                           <br><br>
                                           <p>Microsoft ha publicado boletines de seguridad pra corregir los fallos decubiertos recientemente en su software </p>
                                           <br>
+                                          <br>
+                                          <a href="https://www.qualys.com/research/security-alerts/2024-08-13/microsoft/" target="_blank">Ver Artículo Aquí</a>
+                                          <br> 
                                           <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Technology</a></small>
                                           <small><a href="tech-single.html" title="">13 Agosto, 2024</a></small>
                                           <br>
@@ -183,11 +174,14 @@
                                       </div>
   
                                       <div class="blog-meta big-meta col-md-8">
-                                          <h7><a href="https://www.crowdstrike.com/blog/malicious-inauthentic-falcon-crash-reporter-installer-ciro-malware/" target="_blank" title="">Instalador malicioso no auténtico de Falcon Crash Reporter.</a></h7>
+                                          <h7>Instalador malicioso no auténtico de Falcon Crash Reporter.</h7>
                                           <br><br>
                                           <p>El 24 de julio de 2024, un actor de amenazas no atribuido distribuyó un instalador protegido con contraseña que se hacía pasar por un instalador no auténtico de Falcon Crash Reporter a una entidad alemana en un intento de phishing no atribuido.</p>
-                                          <br><br>
+                                          <br>
+                                          <a href="https://www.crowdstrike.com/blog/malicious-inauthentic-falcon-crash-reporter-installer-ciro-malware/" target="_blank">Ver Artículo Aquí</a>
+                                          <br>
                                           <small><a href="tech-single.html" title="">20 Julio, 2024</a></small>
+                                          <br>
                                           <small><a href="tech-author.html" title="">por crowdstrike.com</a></small>
                                       </div>
                                   </div>
@@ -217,14 +211,17 @@
                                         </div>
   
                                       <div class="blog-meta big-meta col-md-8">
-                                          <h7><a href="https://sotein.com.co/mantenimiento-preventivo-y-correctivo-de-laptop/" target="_blank" title="">Tips para el cuidado y mejora de rendimiento de tu equipo. </a></h7>
+                                          <h7>Tips para el cuidado y mejora de rendimiento de tu equipo dentro de la oficina, Hogar e Industria.</h7>
                                           <br>
                                           <br>
-                                          <p>Aquí te presentamos algunos tips para el cuidado de la salud de tu equipo.</p>
+                                          <p class="texto-justificado">El mantenimiento de un PC es esencial para garantizar su buen funcionamiento y prolongar su vida útil. Consiste en una serie de tareas tanto a nivel de hardware como de software. A nivel de hardware, implica la limpieza regular de componentes internos, la verificación de conexiones y la actualización de controladores. En cuanto al software, es fundamental mantener el sistema operativo actualizado, eliminar archivos innecesarios, instalar antivirus y realizar copias de seguridad periódicas. Un mantenimiento adecuado previene fallos, optimiza el rendimiento y protege tus datos.</p>
                                           <br>
-                                          <small class="firstsmall"><a class="bg-orange" href="#" title="">Technology</a></small>
+                                          <br>
+                                          <a href="https://sotein.com.co/mantenimiento-preventivo-y-correctivo-de-laptop/" target="_blank">Ver Artículo aquí</a>
+                                          <br>
                                           <br>
                                           <small><a href="#" title="">15 Septiembre, 2022</a></small>
+                                          <br>
                                           <small><a href="#" title="">por Sostein</a></small>                            
                                       </div>
                                   </div>
