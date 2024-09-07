@@ -1428,4 +1428,11 @@ ul.img_icon li {
  }
  
 
- 
+ section {
+     text-align: center;
+     background-color: #fff;
+     padding: 20px;
+     margin-bottom: 50px;
+     border-radius: 25px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
