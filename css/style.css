@@ -273,6 +273,14 @@ ul.lan li {
      font-size: 17px;
 }
 
+ul li p {
+     float: left;
+     color: #fff;
+     font-weight: 500;
+     font-size: 17px; 
+}
+
+
 .select-box {
      cursor: pointer;
      position: relative;
