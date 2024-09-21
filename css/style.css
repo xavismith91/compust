@@ -1444,3 +1444,29 @@ ul.img_icon li {
      border-radius: 0px;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
  }
+
+
+ 
+ #cookie-consent {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background-color: #154492;
+     color: white;
+     padding: 20px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 1000;
+   }
+   #cookie-consent button {
+     background-color: #f2db18;
+     border: none;
+     padding: 10px 20px;
+     margin-left: 10px;
+     cursor: pointer;
+     color: white;
+     font-weight: bold;
+   }
+   
