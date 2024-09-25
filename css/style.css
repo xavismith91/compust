@@ -1535,7 +1535,7 @@ ul.img_icon li {
      border-radius: 50%;
      cursor: pointer;
      font-size: 18px;
-     transition: background-color 0.3s;
+     transition: background-color 0.5s;
    }
    
    #scrollToTopBtn:hover {
