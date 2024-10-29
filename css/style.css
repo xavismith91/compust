@@ -1631,3 +1631,15 @@ ul.img_icon li {
      background-repeat: no-repeat;
      background-size: cover;
    }
+
+
+   .fondonews {
+     background-image: url(../images/banner.jpg);
+     width: 80%;
+     height: auto;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+   }
