@@ -91,7 +91,12 @@
                                  </li>
                                  <li class="nav-item">
                                     <a class="nav-link" href="blog2.html">Blog</a>
-                                 </li>
+                                 </li>   
+                                 <div class="cart-container">
+                                    <button id="cart-btn" class="btn btn-outline-light">
+                                       <i class="fa fa-shopping-cart"></i> Carrito (<span id="cart-count">0</span>)
+                                    </button>
+                                 </div>                           
                               </ul>
                            </div>
                         </nav>
@@ -106,6 +111,23 @@
             </div>
       </header>
 
+
+      <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body" id="cart-items">
+                  <p>Tu carrito está vacío.</p>
+               </div>
+               <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+               </div> -->
+            </div>
+         </div>
+      </div>
 
   <div class="album py-5">
     <div class="container">
@@ -292,6 +314,49 @@
                 window.location.href = 'index.html';
             });
        </script>
+<!-- carrito de compras  -->
+<script>
+   const cart = [];
+   const cartCount = document.getElementById('cart-count');
+   const cartItems = document.getElementById('cart-items');
+
+   // Función para actualizar el contenido del carrito
+   function updateCart() {
+      if (cart.length === 0) {
+         cartItems.innerHTML = '<p>Tu carrito está vacío.</p>';
+      } else {
+         cartItems.innerHTML = cart.map(item => `
+            <div class="cart-item">
+               <p><strong>${item.name}</strong></p>
+               <p>${item.description}</p>
+               <p><strong>Precio:</strong> ${item.price}</p>
+               <hr>
+            </div>
+         `).join('');
+      }
+      cartCount.textContent = cart.length;
+   }
+
+   // Escucha los clics en los botones "Comprar"
+   document.querySelectorAll('.btn-primary').forEach((button, index) => {
+      button.addEventListener('click', () => {
+         const card = button.closest('.card');
+         const name = card.querySelector('p strong').textContent;
+         const description = card.querySelector('.card-text').textContent;
+         const price = card.querySelector('small').textContent;
+
+         cart.push({ name, description, price });
+         updateCart();
+      });
+   });
+
+   // Mostrar el modal al hacer clic en el ícono del carrito
+   document.getElementById('cart-btn').addEventListener('click', () => {
+      const modal = new bootstrap.Modal(document.getElementById('cartModal'));
+      modal.show();
+   });
+</script>
+
        <script src="./js/script.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
