@@ -1643,3 +1643,19 @@ ul.img_icon li {
      background-size: cover;
 
    }
+
+
+
+/* modal carrito */
+   #cart-items table {
+     width: 100%;
+     margin-bottom: 1rem;
+  }
+  
+  .cart-quantity {
+     width: 60px;
+     text-align: center;
+  }
+  
+
+  
