@@ -335,22 +335,20 @@
           </form>
           <button class="btn btn-warning btn-lg btn-block text-white" type="submit"><strong>Realizar Pago</strong></button>
         </div>
-
-        
         <div class="col-md-8 order-md-1">
           <h4 class="mb-3"><strong>Datos de Pago e Informacion de Envío</strong></h4>
           <form class="needs-validation" novalidate>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">Nombre(s)</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Ingresa Tu Nombre" value="" required>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                  Ingrese un Nombre
                 </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lastName">Apellido</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Ingresa tu Apellido" value="" required>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                 <div class="invalid-feedback">
                  Ingrese un Apellido
                 </div>
@@ -372,7 +370,7 @@
 
             <div class="mb-3">
               <label for="email">Email <span class="text-muted">(Obligatorio)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo">
+              <input type="email" class="form-control" id="email" placeholder="correo@gmail.com">
               <div class="invalid-feedback">
                 Por favor ingrese un correo valido para el envío de su compra.
               </div>
@@ -380,7 +378,7 @@
 
             <div class="mb-3">
               <label for="address">Dirección</label>
-              <input type="text" class="form-control" id="address" placeholder="Ingresa tu Dirección" required>
+              <input type="text" class="form-control" id="address" placeholder="direección" required>
               <div class="invalid-feedback">
                Por favor ingrese una dirección para el envio de su compra.
               </div>
@@ -388,7 +386,7 @@
 
             <div class="mb-3">
               <label for="address2">Dirección 2 <span class="text-muted">(Opcional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Ingresa tu Dirección">
+              <input type="text" class="form-control" id="address2" placeholder="Opcional">
             </div>
 
             <div class="row">
@@ -416,14 +414,14 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="zip">Código Postal</label>
-                <input type="text" class="form-control" id="zip" placeholder="CP" required>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
                 <div class="invalid-feedback">
                  Ingresa un Código Postal Válido
                 </div>
               </div>
             </div>
             <hr class="mb-4">
-            <!-- <div class="custom-control custom-checkbox">
+            <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="same-address">
               <label class="custom-control-label" for="same-address">Enviar a la misma dirección que la forma de Pago</label>
             </div>
@@ -431,7 +429,7 @@
               <input type="checkbox" class="custom-control-input" id="save-info">
               <label class="custom-control-label" for="save-info">Guardar la información para la siguiente compra.</label>
             </div>
-            <hr class="mb-4"> -->
+            <hr class="mb-4">
 
             <h4 class="mb-3">Forma de Pago</h4>
 
@@ -450,7 +448,7 @@
               </div>
               <div class="custom-control custom-radio">
                <input id="cash" name="paymentMethod" type="radio" class="custom-control-input" required>
-                <label class="custom-control-label" for="cash">Efectivo</label>
+                <label class="custom-control-label" for="paypal">Efectivo</label>
               </div>
             </div>
             <div class="row">
