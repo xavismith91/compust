@@ -73,7 +73,11 @@
 </svg>
 <body class="main-layout">
     
- 
+ <!-- bonton para scroll inicio -->
+ <button id="scroll-to-top" class="btn btn-primary">
+  ↑
+</button>
+
     <header>
      <div class="header_to d_none">
          <div class="container">
@@ -357,4 +361,41 @@
 <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </body>
+
+
+
+    <script>
+      // Muestra el botón cuando el usuario hace scroll hacia abajo
+      window.addEventListener("scroll", function () {
+        const scrollTopButton = document.getElementById("scroll-to-top");
+        if (window.scrollY > 200) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      });
+    
+      // Desplazamiento suave y rápido
+      document.getElementById("scroll-to-top").addEventListener("click", function () {
+        const startTime = Date.now();
+        const duration = 1000; // Duración total en ms
+        const initialScroll = window.scrollY;
+    
+        function scrollStep() {
+          const elapsedTime = Date.now() - startTime;
+          const progress = Math.min(elapsedTime / duration, 1); // Progreso entre 0 y 1
+          const speedFactor = progress < 0.7 ? progress * progress : 1; // Suave al inicio y rápida al final
+          const scrollTo = initialScroll * (1 - speedFactor);
+    
+          window.scrollTo(0, scrollTo);
+    
+          if (progress < 1) {
+            requestAnimationFrame(scrollStep);
+          }
+        }
+    
+        requestAnimationFrame(scrollStep);
+      });
+    </script>
+    
 </html>

@@ -22,6 +22,9 @@
    </head>
    <!-- body -->
    <body class="main-layout">
+      <button id="scroll-to-top" class="btn btn-primary">
+         ↑
+       </button>   
       <header>
         
          <div class="header">
@@ -476,6 +479,39 @@
              localStorage.setItem('cookieConsent', 'declined');
              window.location.href = 'index.html';
          });
+    </script>
+    <script>
+      // Muestra el botón cuando el usuario hace scroll hacia abajo
+      window.addEventListener("scroll", function () {
+        const scrollTopButton = document.getElementById("scroll-to-top");
+        if (window.scrollY > 200) {
+          scrollTopButton.style.display = "block";
+        } else {
+          scrollTopButton.style.display = "none";
+        }
+      });
+    
+      // Desplazamiento suave y rápido
+      document.getElementById("scroll-to-top").addEventListener("click", function () {
+        const startTime = Date.now();
+        const duration = 1000; // Duración total en ms
+        const initialScroll = window.scrollY;
+    
+        function scrollStep() {
+          const elapsedTime = Date.now() - startTime;
+          const progress = Math.min(elapsedTime / duration, 1); // Progreso entre 0 y 1
+          const speedFactor = progress < 0.7 ? progress * progress : 1; // Suave al inicio y rápida al final
+          const scrollTo = initialScroll * (1 - speedFactor);
+    
+          window.scrollTo(0, scrollTo);
+    
+          if (progress < 1) {
+            requestAnimationFrame(scrollStep);
+          }
+        }
+    
+        requestAnimationFrame(scrollStep);
+      });
     </script>
       <script src="./js/script.js"></script>
       <script src="js/jquery.min.js"></script>
